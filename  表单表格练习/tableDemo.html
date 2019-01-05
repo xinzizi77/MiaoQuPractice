@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <title>表格布局</title>
+    <style>
+        body{
+            background: rgb(249, 249, 249);
+            color: rgb(96, 96, 96)
+        }
+        table {
+            margin: 0 auto;
+            background: #fff;
+            width: 960px;
+        }
+        .header {
+            height: 30px;
+            margin-top: 40px;
+        }
+        .content{
+            height: 750px;
+        }
+        .footer {
+            background: rgb(249, 249, 249);
+        }
+        .head {
+            background: rgb(249, 249, 249);
+        }
+        .welcomeText {
+            height: 37px;
+            background: rgb(82, 129, 185);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: #fff;
+        }
+        .right {
+            text-align: right;
+            height: 40px;
+        }
+        .padding_left {
+            padding-left: 10px;
+            text-align: left;
+        }
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="header">
+        <tbody>
+            <tr class="head">
+                <td width="160"><img src="img/logo1.jpg"></td>
+                <td width="160"><img src="img/logo2.jpg"></td>
+                <td width="160"><img src="img/logo3.jpg"></td>
+                <td width="273" style="border-left:1px solid rgb(223, 223, 223);font-size: 16px;color:rgb(90, 90, 89);padding-left: 10px">中国第一大电子邮件服务商</td>
+                <td width="192"></td>
+                <td width="65" style="font-size:10px;color: rgb(101, 108, 168)">了解更多 |</td>
+                <td width="65" style="font-size:10px;color: rgb(101, 108, 168);padding-left: 4px">反馈意见</td>
+            </tr>
+            <tr height="25" style="background:rgb(249, 249, 249)">
+                <td colspan="7"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="content">
+        <tbody>
+            <tr class="welcomeText">
+                <td colspan="7" style="padding-left:20px">欢迎注册网易免费邮！邮件地址可以作为网易通行证，使用其他网易产品</td>
+            </tr>
+            <tr height=50>
+                <td colspan="4" width=645></td>
+                <td rowspan="14" width=318><img src="img/right.jpg" width=100% height=100% style="vertical-align: top"></td>
+            </tr>
+            <tr height=35 style="text-align:center">
+                <td width=144></td>
+                <td width=170 style="background:rgb(34,92,173);color: #fff">注册字母邮箱</td>
+                <td width=170 style="background:rgb(245,245,245); color: rgb(137,137,137)">注册手机号码邮箱</td>
+                <td></td>
+            </tr>
+            <tr height=30>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td class="right"><span>*</span>邮箱地址</td>
+                <td colspan="3" class="padding_left">
+                    <input type="text" placeholder="建议用手机号注册" style="height:20px;width:200px"> @ 
+                    <select>
+                        <option>163.com</option>
+                        <option>qq.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr height=20>
+                <td></td>
+                <td colspan="3" class="padding_left">6~18个字符可用，可使用字母、数字、下划线，需以字母开头</td>
+            </tr>
+            <tr>
+                <td class="right"><span>*</span>密码</td>
+                <td colspan="3" class="padding_left">
+                    <input type="password" style="width:335px;height:20px">
+                </td>
+            </tr>
+            <tr height=20>
+                <td></td>
+                <td colspan="3" class="padding_left">6~16个字符，区分大小写</td>
+            </tr>
+            <tr>
+                <td class="right"><span>*</span>确认密码</td>
+                <td colspan="3" class="padding_left">
+                    <input type="password" style="width:335px;height:20px">
+                </td>
+            </tr>
+            <tr height=20>
+                <td></td>
+                <td colspan="3" class="padding_left">请再次填写密码</td>
+            </tr>
+            <tr height=55 class="right">
+                <td><span>*</span>验证码</td>
+                <td class="padding_left"><input type="text" style="height:18px;width:200px"></td>
+                <td colspan="2" style="text-align:left;"><img src="img/code.jpg" style="height:100%;margin-left:4px"></td>
+            </tr>
+            <tr height=20>
+                <td></td>
+                <td class="padding_left">请填写图片中的字符，不区分大小写</td>
+                <td colspan="2" style="padding-left:10px;color:rgb(88,95,156)">看不清楚？换张图片</td>
+            </tr>
+            <tr height=40>
+                <td colspan="4" style="text-align:center">
+                    <input type="checkbox" checked>同意“服务条款”和“隐私权相关政策”
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td height=30 >
+                    <input type="submit" value="立即注册" style="width:120px;height:30px;color:#fff;background:rgb(79,169,57)">
+                </td>
+                <td colspan="2"></td>
+            </tr>
+            <tr height=50>
+                <td colspan="4"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="footer">
+        <tr height=40><td style="text-align:center">关于网易 关于网易免费邮 邮箱官方博客 客户服务 隐私政策 | 网易公司版权所有 @ 1997-2013</td></tr>
+    </table>
+</body>
+
+</html>
