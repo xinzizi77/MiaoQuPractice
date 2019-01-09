@@ -1,37 +1,15 @@
-body,dl,dd,p,h1,h2,h3,h4,h5,h6 {
-	margin: 0;
-	font-size: 12px;
-}
-ol,ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-a {
-	text-decoration: none;
-}
-img {
-	border: none;
-}
-th,td { 
-    padding: 0;
-}
-table { 
-    border-collapse: collapse;
-}
-form { 
-    margin: 0;
-}
-input { 
-    margin: 0; 
-    padding: 0;
-}
-select { 
-    margin: 0;
-}	
-textarea { 
-    margin: 0; 
-    padding: 0; 
-    resize: none; 
-    outline: none;
-}
+/*  reset 根据项目需求可在此基础上进行添加 */
+
+body,dl,dd,p,h1,h2,h3,h4,h5,h6,p,dl,dd,ol,ul,pre,form,input,textarea,th,td,select { margin: 0; padding: 0;}
+em { font-style: normal;}
+li { list-style: none;}
+a { text-decoration: none;}
+img { border: none; vertical-align: top;}
+table { border-collapse: collapse;}
+textarea { resize: none; outline: none;}
+
+/*  end reset  */
+
+/* common */
+.clear { zoom:1; }
+.clear:after { content: ''; display: block; clear: both; }
