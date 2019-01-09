@@ -7,7 +7,8 @@ a { text-decoration: none;}
 img { border: none; vertical-align: top;}
 table { border-collapse: collapse;}
 textarea { resize: none; outline: none;}
-
+button { outline: none;}
+button:hover { cursor: pointer;}
 /*  end reset  */
 
 /* common */

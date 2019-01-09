@@ -1,0 +1,124 @@
+body {
+    height: 100%;
+    background: rgb(235, 235, 235)
+}
+.title {
+    margin: 20px;
+}
+.title h3 {
+    display: inline-block;
+    font-size: 24px;
+}
+.title button{
+    display: inline-block;
+    width: 100px;
+    height: 40px;;
+    background: red;
+    border: none;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+#box {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    background: #fff;
+    border: 4px solid #000;
+}
+#bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+}
+#bg li:hover {
+    cursor: pointer;
+}
+#bg .float_top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -171px;
+    width: 302px;
+    height: 200px;
+    background: #fff;
+    border: 20px solid rgb(138,129,139)
+}
+#bg .list_wrap {
+    padding-left: 34px;
+    padding-top: 16px;
+}
+#bg .list_wrap li {
+    height: 32px;
+    margin-bottom: 8px;
+    line-height: 32px;
+}
+#bg .list_right {
+    width: 150px;
+    float: right;
+}
+ #bg .list_right li {
+     margin-right: 4px;
+     float: left;
+     text-align: center;
+     line-height: 32px;
+     font-size: 14px;
+ }
+ #bg .color li{
+    height: 30px;
+    width: 36px;
+    color: #fff;
+ }
+ #bg .color li:nth-child(1) {
+     background: rgb(140,199,8)
+ }
+ #bg .color li:nth-child(1):hover {
+     background: rgb(251,0,7);
+     border: 1px solid #000;
+ }
+ #bg .color li:nth-child(2) {
+    background: rgb(234,177,9)
+}
+#bg .color li:nth-child(2):hover {
+    background: rgb(255,255,11);
+    border: 1px solid #000;
+    color: #000;
+}
+#bg .color li:nth-child(3) {
+    background: rgb(73,125,234)
+}
+#bg .color li:nth-child(3):hover {
+    background: rgb(0,0,255);
+    border: 1px solid #000;
+}
+#bg .number li{
+    width: 34px;
+    height: 30px;
+    background: rgb(235, 235, 235);
+    border: 1px solid rgb(179,179,179);
+    color: rgb(109,109,109)
+} 
+#bg .number li:hover {
+    background: rgb(233,130,7);
+    border: 1px solid #000;
+    color: #000;
+}
+#bg .btns {
+    margin-top: 20px;
+    height: 30px;
+    text-align: center;
+}
+#bg .btns button {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    background: rgb(2,30,65);
+    text-align: center;
+    border: none;
+    color: #fff;
+}
