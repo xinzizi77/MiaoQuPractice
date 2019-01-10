@@ -7,15 +7,12 @@ mv.ui = [];
 mv.ui.pushMessage = function (imgUrl,message,direction){
     var oContent = document.querySelector('#content_top');
     var newInfor;
-    if (direction == 'left') {
-        newInfor = '<img src=img/' + imgUrl +'>' + '<p>' + message + '</p>';
-    } else {
-        newInfor = '<p>' + message + '</p>' + '<img src=img/' + imgUrl +'>';
-    }
+    newInfor = '<div><img src=img/' + imgUrl +'>' + '<p>' + message + '</p></div>';
     oContent.innerHTML = newInfor + oContent.innerHTML;
-    var oImg = oContent.querySelector('img');
+    var oDiv = oContent.querySelectorAll('div')[0];
     console.log(oContent)
-    oImg.className = direction;       
+    oDiv.className = direction;     
+    oDiv.className += ' clear';       
 
 };
 

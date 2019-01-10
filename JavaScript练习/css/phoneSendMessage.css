@@ -23,19 +23,31 @@ body {
     width: 32px;
     height: 32px;
 }
-.right {
-    margin-left: 6px;
+#content_top div {
+    width: 100%;
 }
-.left {
-    margin-right: 6px;    
+.right img{
+    margin-left: 6px;
+    float: right;
+}
+.right p {
+    background: rgb(105, 187, 103);
+    float: right;
+}
+.left img{
+    margin-right: 6px;  
+    float: left;  
+}
+.left p {
+    background: rgb(203, 206, 203);
+    float: left;
 }
 #content_top p {
     display: inline-block;
+    max-width: 134px;
     margin-bottom: 15px;
-    padding-left: 4px;
-    width: 142px;
+    padding:0 4px;
     line-height: 26px;
-    background: green;
     font-size: 12px;
     color: #fff;
 }
@@ -45,6 +57,7 @@ body {
     background: rgb(245,245,245);
     border-top: 1px solid rgb(179,179,179);
     line-height: 33px;
+    vertical-align:middle;
     font-size: 12px;
     color: rgb(143,143,147);
 }
@@ -57,10 +70,14 @@ body {
 #message {
     width: 122px;
     height: 26px;
-    margin-left: 2px;
+    margin: 4px 2px;
     border: 1px solid rgb(214,204,225);
     border-radius: 5px;
 }
 .message_box span:hover {
     cursor: pointer;
+}
+#btn {
+    float: right;
+    margin-right: 2px;
 }
