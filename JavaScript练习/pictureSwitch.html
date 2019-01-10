@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片切换</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/pictureSwitch.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main_box">
+        <div class="modle">
+            <button id="cycle">循环切换</button>
+            <button id="order">顺序切换</button>
+        </div>
+        <h3>图片可从第一张跳转到最后循环切换</h3>
+        <div class="img_wrap">
+            <div id="total"> 1 / 4 </div>
+            <a id="pre"><</a>
+            <a id="next">></a>
+            <div id="descr"></div>
+            <img id="img" src="img/img_switch1.jpg" />
+        </div>
+    </div>
+<script src="js/pictureSwitch.js"></script>
+</body>
+</html>
