@@ -1,0 +1,113 @@
+
+/*    hoverBlock Css   */
+
+.hoverBlock {
+    width: 520px;
+    height: 220px;
+    margin: 100px 40px;
+}
+.hoverBlock h5 {
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid rgb(179, 176, 176);
+}
+#typeList {
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+#typeList li {
+    position: relative;
+    float: left;
+    width: 58px;
+    height: 110px;
+    margin-right: 25px;
+}
+#typeList li .img {
+    width: 60px;
+    height: 50px;
+    background: rgb(173, 113, 173);
+    margin-bottom: 4px;
+}
+.none_right {
+    margin-right: 0;
+}
+#typeList .hoverTop {
+    position: absolute;
+    top:-130px;
+    left: 40px;
+    width: 230px;
+    height: 140px;
+    background: rgb(230, 227, 227);
+    z-index: 2;
+    display: none;
+
+}
+#typeList .hoverTop .topTitle {
+    padding-left: 10px;
+    height: 50px;
+    background: rgb(203, 224, 233);
+}
+#typeList .hoverTop h4{
+    width: 154px;
+    height: 28px;
+    line-height: 28px;
+}
+#typeList .hoverTop span {
+    width: 154px;
+    display: inline-block;
+}
+#typeList li ul{
+    line-height: 18px;
+    text-align: center;
+}
+.gray {
+    color: rgb(163, 162, 162);
+    font-size: 12px;
+}
+#typeList .hoverTop .add {
+    width: 60px;
+    height: 24px;
+    background: rgb(151, 185, 157);
+    border-radius: 5px;
+    float: right;
+    margin-top: -13px;
+    margin-right: 6px;
+    color: #fff;
+}
+#typeList .hoverTop .content {
+    padding:10px;
+    line-height: 24px;
+}
+
+/*    hoverBlock css end   */
+
+/*    antoLi  css    */
+#autoLi,#autoV {
+    width: 550px;
+    margin: 40px;
+    float: left;
+}
+#autoLi .btn, #autoV .btn {
+    margin-bottom: 10px;
+}
+#autoLi .mainbox, #autoV .mainbox {
+    width: 100%;
+    padding-top: 10px;
+    position: relative;
+}
+#autoLi li, #autoV li {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: red;
+}
+#autoLi li {
+    border: 1px solid #000;
+}
+#autoV li {
+    color: #fff;
+}
