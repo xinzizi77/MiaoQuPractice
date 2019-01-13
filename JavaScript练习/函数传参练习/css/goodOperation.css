@@ -1,0 +1,15 @@
+#goodsList {
+    width: 500px;
+    margin: 20px auto;
+}
+li {
+    height: 40px;
+    line-height: 40px;
+}
+#statis {
+    width: 500px;
+    margin: 10px auto;
+}
+#statis span {
+    color: red;
+}

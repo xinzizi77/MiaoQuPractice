@@ -64,7 +64,7 @@ mv.app.qqNumber = function (){
             oResult.innerHTML = '你还没有输入任何内容 ~ ~ ~';
         } else if ( isNaN(oText.value) ) {
             oResult.innerHTML = '你输入的不是数字 ~ ~ ~'
-        } else if ( oText.value[0] == '0'){
+        } else if ( oText.value.charAt(0) == '0'){
             oResult.innerHTML = '你的QQ号前面不能为0 ~ ~ ~'
         } else if (oText.value.length <= 5 || oText.value.length >10) {
             oResult.innerHTML = '你的QQ号应该在6-10位 ~ ~ ~'
