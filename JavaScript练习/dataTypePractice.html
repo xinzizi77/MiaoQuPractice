@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据类型的应用</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/dataTypePractice.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="findVaule">
+        <h3>找到合适的值：[ '100px', 'abc'-6, [], -98765, 34, -2, 0, '300', , function(){alert(1);}, null, document, [], true, '200px'-30,'23.45元', 5, Number('abc'), function(){ alert(3); }, 'xyz'-90 ]</h3>
+        <ul>
+            <li>1、找到arr里所有的数字：<span id="allNum"></span></li>
+            <li>2、找到可以转成数字的：<span id="changeNum"></span></li>
+            <li>3、把转成数字以后，最大值判断出来：<span id="maxNum"></span></li>
+            <li>4、把 NaN 所在的位置找出来：<span id="nanPosition"></span></li>
+        </ul>
+    </div>
+    <div id="qqNumber">
+        <div class="top">
+            请输入QQ号码：<input type="text" value="" id="text"/>
+            <button id="btn">判断</button> 
+            <span id="result"></span>
+        </div>
+        <ul>
+            <li>1、有没有输入</li>
+            <li>2、输入的是不是数字</li>
+            <li>3、不能有0在前面</li>
+            <li>4、不能是小数</li>
+            <li>5、输入的数字必须在5位以上、10位以内</li>
+        </ul>
+    </div>
+<script src="js/dataTypePractice.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*    FindVaule Css    */
+
+#findVaule {
+    width: 810px;
+    height: 250px;
+    margin: 20px auto;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+#findVaule h3 {
+    line-height: 30px;
+}
+#findVaule ul{
+    margin-top: 20px;
+}
+#findVaule li {
+    height: 30px;
+    line-height: 30px;
+}
+#findVaule span {
+    color: red;
+}
+
+/*    FindVaule Css  end   */
+
+
+/*    QqNumber   Css     */
+
+#qqNumber {
+    width: 810px;
+    height: 200px;
+    margin: 40px auto;
+}
+#qqNumber .top {
+    height: 50px;
+    font-size: 20px;
+}
+#text {
+    width: 150px;
+    height: 20px;
+    font-size: 18px;
+}
+#result{
+    color: red;
+    font-size: 14px;
+}
+#qqNumber li {
+    height: 30px;
+    line-height: 30px;
+}
+/*     QqNumber  Css  End   */
