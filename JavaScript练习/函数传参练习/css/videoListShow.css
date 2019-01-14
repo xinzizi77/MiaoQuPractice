@@ -1,0 +1,152 @@
+/*       recordList  css     */
+#recordList {
+    width: 262px;
+    background: rgb(210, 227, 243);
+    margin: 30px auto;
+    padding: 4px;
+}
+.headText {
+    height: 30px;
+    line-height: 30px;
+}
+.headText .title {
+    width: 150px;
+    height: 31px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(141, 178, 214);
+    margin-top: 0;
+    color: rgb(58, 84, 141);
+}
+.headText li{
+    float: left;
+    text-align: center;
+    width: 36px;
+    height: 24px;
+    border: 1px solid rgb(108, 161, 214);
+    border-left: 0px;
+    margin-top: 6px;
+    font-size: 14px;
+    color: rgb(105, 130, 175);
+}
+#borderLeft {
+    border-left: 1px solid rgb(104, 168, 231);
+}
+.headText .liActive {
+    background: #fff;
+    color: #000;
+    border-bottom: none;
+}
+.headText li:hover {
+    cursor: pointer;
+}
+.contentList{
+    display: none;
+}
+.contentActive {
+    display: block;
+}
+.contentList strong{
+    width: 20px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: rgb(13, 66, 109);
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+}
+.contentList li {
+    padding: 8px 10px;
+    border-bottom: 1px dotted #fff;
+}
+.contentList li:hover {
+    cursor: pointer;
+    background: #fff;
+}
+.contentList h4{
+    display: inline-block;
+    color: rgb(17, 17, 17);
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 4px;
+}
+.contentList .show {
+    display: none;
+    float: right;
+    width: 210px;
+    background: #fff;
+}
+.contentList img {
+    width: 80px;
+    height: 60px;
+    border: 1px solid rgb(104, 168, 231);
+    padding: 2px;
+}
+.contentList span {
+    display: inline-block;
+    width: 114px;
+    font-size: 14px;
+    margin: 2px;
+}
+.contentList button {
+    float: right;
+    display: inline-block;
+    margin-top: -10px;
+}
+.liHover {
+    background: #fff;
+}
+/*     recordList  css  end    */
+
+/*      inputValue      css     */
+#inputVaule {
+    width: 570px;
+    margin: 20px auto;
+    background: #eee;
+}
+#inputVaule h3{
+    height: 30px;
+    line-height: 30px;
+    background: rgb(100, 196, 129);
+    color: #fff;
+    padding-left: 20px;
+}
+#inputVaule li {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(187, 234, 248);
+}
+#inputVaule h4 {
+    display: inline-block;
+    color: rgb(73, 73, 73);
+    font-weight: normal;
+    font-size: 14px;
+}
+#inputVaule img {
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+}
+#inputVaule img:hover {
+    cursor: pointer;
+}
+#inputVaule input {
+    height: 24px;
+    width: 150px;
+}
+#inputVaule .reviseWrap {
+    display: none;
+}
+#inputVaule button {
+    color: rgb(84, 177, 88);
+    background: none;
+    border: none;
+}
+#inputVaule button:hover{
+    background: rgb(84, 177, 88);
+    color: #fff;
+}
+
+/*      inputValue      css     */
