@@ -1,0 +1,85 @@
+/*     statWrap  css    */
+#starWrap {
+    width: 500px;
+    height: 50px;
+    margin: 50px auto;
+    font-size: 16px;
+    position: relative;
+}
+#starWrap span{
+    color: red;
+}
+#starWrap  #orange {
+    color: orange;
+    padding-left: 4px;
+    display: none;
+}
+#starWrap li{
+    float: left;
+    padding-left: 4px;
+    height: 30px;
+    line-height: 30px;
+}
+#starWrap li img{
+    width: 22px;
+    height: 24px;
+}
+#starWrap li img:hover{
+    cursor: pointer;
+}
+#starGrop{
+    position: absolute;
+    top: -8px;
+    left: 224px;
+    width: 240px;
+    height: 40px;
+    background: url(../img/star_grop.png) no-repeat 0 0;
+}
+/*     starWrap    css   end    */
+
+/*   musicCheck   css  */
+#musicCheck {
+    width: 390px;
+    height: 500px;
+    margin: 40px auto;
+}
+#songList{
+    padding: 10px;
+}
+#songList li{
+    height: 34px;
+    line-height: 34px;
+    border-top: 1px solid #fff;
+}
+#musicCheck input{
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    float: left;
+}
+#songList input {
+    margin-top: 12px;
+}
+#musicCheck span {
+    display: inline-block;
+    width: 200px;
+}
+#btnList {
+    border-top: 1px solid rgb(226, 222, 222);
+    padding: 10px;
+}
+#btnList li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 90px;
+}
+#btnList input{
+    margin-top: 12px;
+}
+#btnList button{
+    width: 68px;
+    height: 24px;
+    color: rgb(189, 185, 185);
+    border: 1px solid rgb(189,185,185);
+}
