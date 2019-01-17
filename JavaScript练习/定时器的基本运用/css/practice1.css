@@ -1,0 +1,101 @@
+/*     upDownScroll    Css   */
+#upDownScroll {
+    width: 200px;
+    height: 500px;
+    margin: 50px;
+    border: 1px solid rgb(196, 193, 193);
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+#upDownScroll .top {
+    height: 30px;
+    line-height: 30px;
+    background: rgb(35, 96, 114);
+    color: #fff;
+    font-size: 18px;
+    padding:0 4px;
+    position: relative;
+    z-index: 2;
+}
+#goodsList {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+}
+#up,#down{
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    left: 0px;
+    background: rgb(217, 221, 223);
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    z-index: 2;
+}
+#up{
+    top:30px;
+}
+#up:hover,#down:hover {
+    cursor: pointer;
+}
+#down {
+    bottom: 0;
+}
+#upDownScroll a{
+    display: inline-block;
+    float: right;
+    width: 50px;
+    font-size: 14px;
+    color: #fff;
+}
+#upDownScroll li{
+    height: 80px;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-bottom: 1px dotted rgb(184, 182, 182);
+}
+#upDownScroll h4{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+#upDownScroll span {
+    display: inline-block;
+    width: 100px;
+}
+/*    upDownScroll   Css  end  */
+
+/*    autoActive  css   */
+#autoActive {
+    margin: 50px;
+    float: left;
+    border: 1px solid rgb(233, 133, 133);
+}
+#autoActive ul{
+    float: left;
+}
+#autoActive img{
+    float: left;
+    width: 220px;
+    height: 250px;
+    margin-top: 4px;
+}
+#autoActive li {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid rgb(240, 155, 155);
+    margin: 4px;
+    font-size: 14px;
+}
+.liActive {
+    background: rgb(247, 120, 120);
+    color: #fff;
+}
+
+/*   autoActive    css      end      */
