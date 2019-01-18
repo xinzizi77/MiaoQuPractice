@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数字加分</title>
+    <link href="../css/reset.css" rel="stylesheet" />
+    <style>
+        ul {
+            width: 500px;
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            margin-top: 300px;
+            position: relative;
+        }
+
+        #bg {
+            position: absolute;
+            height: 50px;
+            top: 0;
+            left: 0;
+            background: rgb(91, 224, 248);
+        }
+
+        ul li {
+            float: left;
+            width: 10%;
+            height: 50px;
+            text-align: center;
+            position: relative;
+        }
+
+        ul span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="moveWrap">
+        <div id="bg"></div>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+        <li><span>+1</span></li>
+    </ul>
+    <script src="js/myFunction.js"></script>
+    <script>
+        window.onload = function () {
+            var oWrap = document.getElementById('moveWrap');
+            var aText = oWrap.getElementsByTagName('span');
+            var oBg = document.getElementById('bg');
+            var timer = null;
+            var flag = true;
+            var num = 0;
+
+            oWrap.onclick = function () {
+
+                clearInterval(timer);
+
+                if (flag) {
+                    for (var i = 0; i < aText.length; i++) {
+                        aText[i].style.cssText = "top:0px;opacity:100;filter:alpha(opacity:1);";
+                    }
+                    doMove(oBg, 'width', 20, 500, function () {
+                        opacityFunction(oBg, 20, 0, function () {
+                            oBg.style.cssText = "width:0;opacity:100;filter:alpha(opacity:1);";
+                        });
+                    });
+                    flag = false;
+                    num = 0;
+                }
+
+                timer = setInterval(function () {
+                    if (num < aText.length) {
+                        doMove(aText[num], 'top', 10, -200);
+                        opacityFunction(aText[num], 20, 0);
+                        num++;
+                        if (num == aText.length) {
+                            flag = true;
+                            clearInterval(timer);
+                        }
+                    }
+                }, 100);
+
+            }
+
+            function opacityFunction(obj, dir, target, endFn) {
+
+                clearInterval(obj.opacity);
+                obj.speed = 100;
+
+                obj.opacity = setInterval(function () {
+
+                    obj.speed -= dir;
+                    obj.style.opacity = obj.speed / 100;
+                    obj.style.filter = 'alpha(opacity:' + obj.speed + ')';
+
+                    if (obj.speed == target) {
+                        clearInterval(obj.opacity);
+                        endFn && endFn();
+                    }
+                }, 100);
+
+            }
+        }
+    </script>
+</body>
+
+</html>
