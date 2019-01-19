@@ -1,0 +1,124 @@
+#goodsDate {
+    width: 664px;
+    height: 660px;
+    margin: 20px auto;
+    position: relative;
+}
+#goodsList{
+    height: 280px;
+}
+#goodsList li {
+    float: left;
+    width: 152px;
+    height: 280px;
+    padding: 4px;
+    position: relative;
+}
+#goodsList li div{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+h3 {
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 2px solid rgb(114, 114, 114);
+}
+li input{
+    height: 22px;
+    width: 116px;
+    background: rgb(211, 185, 210);
+    border: none;
+    color: rgb(46, 28, 20);
+}
+li button {
+    width: 42px;
+    height: 22px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: rgb(46, 28, 20);
+    font-weight: bold;
+}
+li .day{
+    height: 30px;
+    line-height: 30px;
+    color: rgb(158, 154, 154);
+    font-size: 12px;
+    font-weight: bold;
+}
+li img{
+    width: 137px;
+    height: 148px;
+}
+li .title {
+    font-size: 12px;
+    color: rgb(102, 101, 101);
+}
+li p{
+    font-size: 14px;
+    color: rgb(158, 154, 154);
+    font-weight: bold;
+}
+.price{
+    color: rgb(184, 18, 18);
+}
+#downImg,#goodsList{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+#downImg  li{
+    float: left;
+}
+#downImg li .down {
+    width: 160px;
+    height: 280px;
+    /* display: none; */
+}
+#priceList{
+    position: absolute;
+    top: 320px;
+    width: 100%;
+}
+#priceList .head{
+    height: 35px;
+    line-height: 35px;
+}
+#priceList .head span{ 
+    font-size: 16px;
+    font-weight: bold;
+}
+#priceList li span {
+    width: 180px;
+    text-align: center;
+    display: inline-block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+#priceList li{
+    height: 70px;
+    line-height: 70px;
+    background: rgba(209, 166, 216, 0.87);
+    color: rgb(85, 32, 10);
+    margin-bottom: 4px;
+    padding-left: 2px;
+}
+#priceList li span {
+    font-size: 12px;
+}
+#total {
+    margin-top: 10px;
+}
+#priceList img {
+    width: 80px;
+    height: 60px;
+    border: 1px solid rgb(97, 56, 56);
+    float: right;
+    margin-right: 40px;
+    margin-top: 4px;
+}
