@@ -1,0 +1,42 @@
+body {
+    background: #eee;
+    width: 100%;
+}
+#btnGroup {
+    width: 250px;
+    height: 40px;
+    margin: 30px auto;
+}
+#btnGroup button {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: rgb(12, 129, 129);
+    font-size: 14px;
+}
+#imgList {
+    width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+    background: #fff;
+}
+#imgList li {
+    width: 278px;
+    height: 230px;
+    padding: 10px;
+    border-right: 2px solid #eee;
+    float: left;
+}
+#imgList li img {
+    height: 180px;
+    width: 100%;
+}
+#imgList li h2 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(40, 93, 143);
+    background: #eee;
+    font-size: 20px;
+}

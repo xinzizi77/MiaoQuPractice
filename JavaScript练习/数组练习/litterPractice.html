@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>课堂小练习</title>
+</head>
+<body>
+    <h1>练习一</h1>
+    <p>随机产生 100 个从 0 ~ 1000 之间不重复的整数</p>
+    <p id="randomNumber"></p>
+    <h1>练习二</h1>
+    <p>为数组编写该方法：indexOf('img/1.jpg')</p>
+    <p id="findPos"></p>
+
+<script>
+    window.onload = function () {
+        mv.app.randomNum();
+        mv.app.findPos();
+    };
+    var mv = {};
+
+    mv.app = {};
+    mv.app.randomNum = function (){
+        var oNumberWrap = document.getElementById('randomNumber');
+        var aNumber = [];
+        
+        for (var i = 0; i < 100; i++) {
+            aNumber[i] = Math.round(Math.random()*1000);
+            for(var j = 0; j < aNumber.length; j++) {
+                if ( j!=i&&aNumber[i] == aNumber[j]) {
+                    i--;
+                    break;
+                }
+            }
+        }
+
+        for (var i = 0; i < aNumber.length; i++) {
+            oNumberWrap.innerHTML += aNumber[i] + '  ';
+
+            if (i%10 == 0 && i) {
+                oNumberWrap.innerHTML +='<br>'
+            }
+        }
+    }
+
+    mv.app.findPos = function (){
+        var oPos = document.getElementById('findPos');
+        var array = ['aa','bb.com','img/1.jpg','html.htm'];
+        
+        oPos.innerHTML = '数组为：' + array + '<br>';
+        indexOf('img/1.jpg');
+
+        function indexOf(string) {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] == string) {
+                    oPos.innerHTML += string + '的位置为：' + i;
+                    break;
+                }
+            }
+        }
+
+    }
+
+</script>
+</body>
+</html>
