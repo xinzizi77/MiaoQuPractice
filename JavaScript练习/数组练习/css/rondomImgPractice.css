@@ -1,0 +1,24 @@
+#imgList {
+    width: 480px;
+    height: 480px;
+    margin: 300px auto;
+    padding: 10px 0 0 10px;
+    background: #eee;
+}
+#imgList li {
+    position: relative;
+    width: 230px;
+    height: 110px;
+    float: left;
+    margin: 0 10px 10px 0px;
+    overflow: hidden;
+}
+#imgList li .imgWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#imgList li img {
+    width: 230px;
+    height: 110px;
+}
