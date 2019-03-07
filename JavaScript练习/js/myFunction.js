@@ -1,6 +1,5 @@
 
 function doMove ( obj, attr, dir, target, endFn ) {
-	
 	dir = parseInt(getStyle( obj, attr )) < target ? dir : -dir;
 	
 	clearInterval( obj.timer );

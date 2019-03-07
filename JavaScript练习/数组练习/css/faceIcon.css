@@ -1,0 +1,46 @@
+body {
+    background: rgb(216, 240, 219);
+}
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+#start {
+    margin: 10px auto;
+    display: block;
+}
+#gameWrap {
+    width: 950px;
+    height: 450px;
+    margin: 10px auto;
+}
+#scoreWrap {
+    width: 148px;
+    height: 80px;
+    background: rgb(232, 243, 184);
+    border: 1px solid rgb(23, 110, 110);
+    border-right: none;
+    float: left;
+}
+li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+#contentWrap {
+    position: relative;
+    width: 798px;
+    height: 100%;
+    background: #fff;
+    border: 1px solid rgb(23, 110, 110);   
+    float: left;
+    overflow: hidden;
+}
+#contentWrap img:hover {
+    cursor: pointer;
+}
