@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dom操作练习</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="practice.css" />
+</head>
+
+<body>
+
+    <div id="practice1">
+        <h2>练习1：留言板，限制条数5条</h2>
+        <input type="text" name="" class="inputWrap" />
+        <input type="button" value="发送" class="sendMessage">
+        <ul class="contentWrap">
+        </ul>
+    </div>
+    <div id="practice2">
+        <h2>练习2：为留言添加批量删除</h2>
+        <input type="text" name="" class="inputWrap" />
+        <input type="button" value="添加" class="sendMessage">
+        <input type="button" value="删除" id="del" />
+        <ul class="contentWrap">
+        </ul>
+    </div>
+    <div id="practice3">
+        <h2>练习3：getElementByClassName扩展</h2>
+        <p>找出document下标签为*的class为box或者box1的元素</p>
+        <ul>
+            <li class="box box1">li --> class:box box1</li>
+            <li class="box2">li --> class:box2</li>
+            <li class="box box2">li --> class:box box2</li>
+            <li>li --> class:无</li>
+            <li class="box1">li --> class: box1</li>
+            <li class="box3">li --> class: box3</li>
+        </ul>
+        <p class="box1">p --> class: box1</p>
+    </div>
+    <script src="practice.js"></script>
+</body>
+
+</html>

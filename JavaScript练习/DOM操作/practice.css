@@ -1,0 +1,32 @@
+h2 {
+    margin-bottom: 20px;
+}
+#practice1, #practice2, #practice3 {
+    margin: 30px;
+}
+input[type = 'text'] {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+input[type = 'button'] {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background: #eee;
+    outline: none;
+}
+input[type = 'button']:hover {
+    cursor: pointer;
+}
+.contentWrap {
+    margin-top: 20px;
+}
+#practice2 li:hover {
+    cursor: pointer;
+}
+p {
+    margin: 20px 0;
+}
