@@ -1,0 +1,71 @@
+body {
+    position: relative;
+    height: 2000px;
+}
+
+/*   两侧居中显示     */
+#slideCenter {
+    position: relative;
+    height: 300px;
+}
+#slideCenter div {
+    height: 300px;
+    width: 100px;
+    background: red;
+}
+#slideCenter .left {
+    position: absolute;
+    left: 0;
+}
+#slideCenter .right {
+    position: absolute;
+    right: 0;
+}
+/*   两侧居中显示     */
+
+/*   关键字提示   */
+#keyTitle {
+    width: 600px;
+    height: 200px;
+    margin: 50px auto;
+    line-height: 30px;
+}
+#keyTitle span {
+    color: red;
+}
+#keyTitle span[title] {
+    position: relative;
+    color: green;
+}
+#keyTitle span[title]:hover{
+    cursor: pointer;
+}
+#keyTitle .spanHover {
+    position: absolute;
+    border: 1px solid #000;
+    line-height: 26px;
+    top: 24px;
+    left: 0;
+    background: #fff;
+    z-index: 2;
+    padding: 4px;
+    display: none;
+    color: #000;
+}
+/*   关键字提示   */
+
+/*    返回顶部     */
+#skipTop {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(214, 154, 241);
+}
+#skipTop:hover {
+    cursor: pointer;
+}
+/*    返回顶部     */
