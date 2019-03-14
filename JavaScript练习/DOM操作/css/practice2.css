@@ -1,0 +1,70 @@
+#tab{
+    width: 800px;
+    height: 40px;
+    margin: 50px auto 10px auto;
+    border-bottom: 4px solid orange;
+}
+#tab li{
+    display: inline-block;
+    height: 100%;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+#tab li:hover {
+    cursor: pointer;
+}
+.tabActive {
+    background: orange;
+    color: #fff;
+}
+#content {
+    width: 800px;
+    margin: 0 auto;
+}
+#content li {
+    height: 40px;
+    line-height: 40px;
+    text-decoration: underline;
+    color: blue;
+    width: auto;
+}
+#content li a{
+    display: inline-block;
+}
+#content li:hover {
+    cursor: pointer;
+}
+#nextList {
+    display: none;
+}
+#wrap {
+    position: absolute;
+    display: none;
+}
+#sign{
+    width: 392px;
+    height: 192px;
+    border: 2px solid orange;
+    background: #fff;
+    position: relative;
+    padding: 4px;
+}
+#sign:before {
+    position: absolute;
+    content: url(../img/arrow.png);
+    top: 100px;
+    left: -10px;
+}
+#sign h2 {
+    height: 50px;
+    line-height: 50px;
+}
+#sign li {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #EEE;
+}
