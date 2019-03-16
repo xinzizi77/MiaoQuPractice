@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模拟select多选</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+        #text {
+            width: 244px;
+            height: 30px;
+            line-height: 30px;
+            margin: 20px 0 0 20px;
+            padding-left: 6px;
+            border: 1px solid orange;
+        }
+
+        #text:hover {
+            cursor: pointer;
+        }
+
+        ul {
+            width: 250px;
+            margin-left: 20px;
+            border: 1px solid orange;
+            display: none;
+        }
+
+        ul li {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 6px;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        ul li:hover {
+            cursor: pointer;
+            background: orange;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text"></div>
+    <ul id="font">
+        <li>宋体</li>
+        <li>黑体</li>
+        <li>楷体</li>
+        <li>微软雅黑</li>
+        <li>新宋体</li>
+        <li>仿宋</li>
+    </ul>
+
+    <script src="js/selectCheck.js"></script>
+</body>
+
+</html>
