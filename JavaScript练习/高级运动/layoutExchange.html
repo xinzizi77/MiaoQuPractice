@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局转换</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+        #imgList {
+            width: 360px;
+            margin: 50px auto;
+            position: relative;
+        }
+        #imgList li {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 10px;
+        }
+        li img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul id="imgList">
+        <li><img src='../img/tv1.jpg'></li>
+        <li><img src='../img/tv2.jpg'></li>
+        <li><img src='../img/tv3.jpg'></li>
+        <li><img src='../img/tv4.jpg'></li>
+        <li><img src='../img/tv5.jpg'></li>
+        <li><img src='../img/tv6.jpg'></li>
+        <li><img src='../img/tv7.jpg'></li>
+        <li><img src='../img/tv8.jpg'></li>
+        <li><img src='../img/tv9.jpg'></li>
+    </ul>
+<script src="../js/myFunction.js"></script>
+<script>
+    window.onload = function (){
+        var oUl = document.getElementById('imgList');
+        var aImg = oUl.getElementsByTagName('li');
+        var zIndex = 2;
+
+        //     进行布局转换：也就是将文档流定位的东西转成绝对定位
+        for (var i = 0; i < aImg.length; i++) {
+            aImg[i].style.top = aImg[i].offsetTop + 'px';
+            aImg[i].style.left = aImg[i].offsetLeft + 'px';
+        };
+
+        for (var i = 0; i < aImg.length; i++) {
+            aImg[i].style.position = 'absolute';
+            aImg[i].style.margin = '0';
+        };
+
+        for(var i = 0; i < aImg.length; i++) {
+            aImg[i].onmouseover = function (){
+                this.style.zIndex = zIndex++;
+                perfectMove(this,{width:200,height:200,marginLeft:-50,marginTop:-50});
+            };
+
+            aImg[i].onmouseout = function (){
+                perfectMove(this,{width:100,height:100,marginLeft:0,marginTop:0});
+            }
+        }
+
+    };
+</script>
+</body>
+</html>

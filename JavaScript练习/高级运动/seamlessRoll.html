@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无缝滚动</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+        #rollWrapper {
+            width: 840px;
+            height: 145px;
+            margin: 40px auto;
+            background: #eee;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+        ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        ul li {
+            width: 190px;
+            height: 125px;
+            padding: 10px;
+            float: left;
+        }
+        ul li img {
+            width: 100%;
+            height: 100%;
+        }
+        span {
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            top: 47px;
+            z-index: 1;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            line-height: 50px;
+            text-align: center;
+            font-size: 20px;          
+        }
+        #next {
+            right: 0;
+        }
+        span:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="rollWrapper">
+    <span id="pre"><</span>
+    <span id="next">></span>
+    <ul id="rollUl">
+        <li><img src='../img/tv2.jpg'></li>
+        <li><img src='../img/tv7.jpg'></li>
+        <li><img src='../img/tv8.jpg'></li>
+        <li><img src='../img/tv9.jpg'></li>
+    </ul>
+</div>
+<script src="../js/myFunction.js"></script>
+<script>
+window.onload = function (){
+    var oUl = document.getElementById('rollUl');
+    var aLi = oUl.getElementsByTagName('li');
+    var oPre = document.getElementById('pre');
+    var oNext = document.getElementById('next');
+    var timer = null;
+    var speed = -2;
+    
+    oUl.innerHTML += oUl.innerHTML;
+    oUl.style.width = aLi.length * aLi[0].offsetWidth + 'px';
+    move();
+
+    oUl.onmouseover = function (){
+        clearInterval(timer);
+    };
+    oUl.onmouseout = function (){
+        move();
+    };
+    
+    oPre.onclick = function (){
+        speed = -2;
+    };
+
+    oNext.onclick = function (){
+        speed = 2;
+    }
+
+
+    function move(){
+    timer = setInterval(function(){
+        if (oUl.offsetLeft < -oUl.offsetWidth / 2) {
+            oUl.style.left = 0;
+        } else if (oUl.offsetLeft > 0) {
+            oUl.style.left = -oUl.offsetWidth / 2 + 'px';
+        }
+        oUl.style.left = oUl.offsetLeft + speed  + 'px';
+    },30);
+    };
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用面向对象改写选项卡</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+        #tab {
+            width: 480px;
+            height: 200px;
+            margin: 40px auto;
+            border: 1px solid #000;
+        }
+        #name {
+            border-bottom: 1px dotted #000;
+        }
+        #name li {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+            padding: 10px;
+        }
+        #name li:hover {
+            cursor: pointer;
+        }
+        #content li {
+            width: 100%;
+            height: 150px;
+            display: none;
+        }
+        #name .active {
+            background: orange;
+        }
+        #content li:nth-child(1) {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+ <div id="tab">
+     <ul id="name" class="clear">
+         <li class="active">标签一</li>
+         <li>标签二</li>
+         <li>标签三</li>
+         <li>标签四</li>
+     </ul>
+     <ul id="content">
+         <li>aaaaaaaaaaaaa</li>
+         <li>bbbbbbbbbbbbb</li>
+         <li>ccccccccccccc</li>
+         <li>ddddddddddddd</li>
+     </ul>
+ </div>   
+ <script>
+window.onload = function (){
+    var oTab = new Tab('name', 'content');
+};
+ function Tab(name, content){
+    var that = this;
+    var oName = document.getElementById(name);
+    this.aNameLi = oName.getElementsByTagName('li');
+    var oContent = document.getElementById(content);
+    this.aContentLi = oContent.getElementsByTagName('li');
+
+    for(var i = 0; i < this.aNameLi.length; i++) {
+        this.aNameLi[i].index = i;
+        this.aNameLi[i].onclick = function(){that.change(this)};
+    }
+ };
+ Tab.prototype.change = function(btn){
+            for (var j = 0; j < this.aNameLi.length; j++) {
+                this.aNameLi[j].className = '';
+                this.aContentLi[j].style.display = 'none';
+            };
+
+            btn.className = 'active';
+            this.aContentLi[btn.index].style.display = 'block';
+        };
+ </script>
+</body>
+</html>
