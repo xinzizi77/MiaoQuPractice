@@ -14,15 +14,20 @@
     </style>
 </head>
 <body>
-    <div id="div1"></div>
+    <input type="button" value="">
+    <input type="button" value="">
+    <input type="button" value="">
+    <input type="button" value="">
 </body>
 <script src="js/myFunction.js"></script>
 <script>
-window.onload = function(){
-    var oDiv1 = document.getElementById('div1');
-    oDiv1.onclick = function(){
-        perfectMove(oDiv1,{opacity:10, width: 102,height:202});
-    }
-}
+var aBtn = document.getElementsByTagName('input');
+
+for(let i = 0; i <aBtn.length; i++) {
+	// aBtn[i].index = i;
+	aBtn[i].onclick = function() {
+		console.log(i);
+	};
+};
 </script>
 </html>

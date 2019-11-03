@@ -1,0 +1,423 @@
+body {
+    font: 12px/1 "Microsoft YaHei","微软雅黑","arial","tahoma","MicrosoftJhengHei";
+}
+#mainContentWrapper {
+    width: 100%;
+    position: relative;
+}
+header {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    background: #eee;
+    position: relative;
+}
+header .banner {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+#logo {
+    height: 80px;
+    line-height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#logo img {
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+#logo span {
+    font-size: 20px;
+}
+#nav {
+    width: 605px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+#nav li{
+    float: left;
+    width: 20%;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+#nav li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: #444;
+}
+#nav li a:hover {
+    cursor: pointer;
+}
+#nav li  .hover {
+    background: rgb(52, 199, 83);
+    color: #fff;
+}
+#nav li .nav_item {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#header_box {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+#imgLi {
+    width: 2560px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#imgLi li {
+    width: 1280px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+#imgLi li:nth-child(1){
+    background: url(../img/img2.jpeg);
+    background-size: 100% 100%;
+}
+#imgLi li:nth-child(2){
+    background: url(../img/img3.jpeg);
+    background-size: 100% 100%;
+}
+#pre,#next {
+    position: absolute;
+    top: 288px;    
+    width: 34px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+#pre,#next:hover {
+    cursor: pointer;
+}
+#pre {
+    left: 10px;
+}
+#next {
+    right: 10px;
+}
+#pre img, #next img {
+    width: 24px;
+    height: 24px;
+    margin-top: 18px;
+}
+#title1, #title2 {
+    position: absolute;
+    width: 80%;
+    height: 150px;
+    top:200px;
+    font-size: 48px;
+    padding-top: 40px;
+}
+#title1 {
+    background: rgba(255, 255, 255, 0.5);
+    left: -970px;
+}
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+        transform: scale(0.3);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(0.6); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+#title2 {
+    color: #fff;
+    left: 10%;
+    transform: scale(0.1);  /*开始为原始大小*/
+}
+.scaleDraw{
+    -webkit-animation-name: scaleDraw; /*关键帧名称*/
+    -webkit-animation-timing-function: linear; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+    -webkit-animation-duration: 300ms; /*动画所花费的时间*/
+}
+#title1 p, #title2 p {
+    text-align: center;
+    height: 70px;
+}
+h2 {
+    font-size: 36px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background: rgb(68, 68, 68);
+    margin-top: 40px;
+    color: #eee;
+}
+#footer {
+    width: 50%;
+    line-height: 45px;
+    margin: 0 auto;
+    text-align: center
+}
+#footer span:nth-child(1) {
+    margin-right: 10px;
+}
+.margin_top {
+    margin-top: 40px;
+}
+
+/*   aboutUsContent   */
+#aboutContent,#contectContent {
+    width: 78%;
+    height: 430px;
+    margin: 0 auto;
+    box-sizing: border-box; 
+    padding: 10px;
+    overflow: hidden;
+}
+.contentWrap {
+    margin-top: 40px;
+    position: relative;
+}
+#aboutContent .left {
+    position: absolute;
+    top: 0;
+    left: -460px;
+    width: 50%;
+    text-align: center;
+}
+#aboutContent img {
+    width: 400px;
+    height: 280px;
+}
+#intro {
+    position: absolute;
+    top: 0;
+    right: -500px;
+    width: 50%;
+    float: left;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+/*    contectUs     */
+#contectContent {
+    width: 74%;
+    height: 400px;
+}
+#contectContent .left{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#iconLi li{
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+#iconLi li:nth-child(1) {
+    height: 60px;
+}
+#iconLi li img {
+    margin-top: 7px;
+    margin-right: 4px;
+}
+#iconLi li .company {
+    display: inline-block;
+    width: 80%;
+}
+#iconLi li .company span {
+    display: block;
+    height: 20px;
+}
+#two-dimension{
+    margin-top: 14px;
+}
+#two-dimension img {
+    width: 74px;
+    height: 74px;
+}
+#contectContent .right {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#contectContent .right iframe {
+    float: right;
+}
+
+/*   itemWrapper    */
+#itemWrapper {
+    box-sizing: border-box;
+}
+#itemWrapper .contentWrapper {
+    width: 80%;
+    height: 680px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+#itemList {
+    width: 100%;
+    box-sizing: border-box;
+}
+#itemList li{
+    width: 49%;
+    height: 340px;
+    float: left;
+    padding: 140px 9%;
+    box-sizing: border-box;
+    background: rgb(41, 53, 53);
+    transform: scale(0);
+}
+#itemList li:nth-child(2) {
+    background: rgb(32, 44, 44);
+}
+#itemList li:nth-child(3) {
+    background: rgb(28, 39, 39);
+}
+#itemList li:nth-child(4) {
+    background: rgb(22, 33, 33);
+}
+#itemList .content {
+    display: inline-block;
+    margin-left: 10%;
+}
+#itemList span {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: x-large;
+    color: rgb(52, 199, 83);
+}
+#itemList p {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+}
+@keyframes scaleItem {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+        transform: scale(0.2);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(0.4); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(0.6);
+    }
+    75%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.scaleItem {
+    -webkit-animation-name: scaleItem; /*关键帧名称*/
+    -webkit-animation-timing-function: linear; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+    -webkit-animation-duration: 300ms; /*动画所花费的时间*/
+}
+.background {
+    background: rgb(33, 43, 43);
+    padding: 40px 0;
+}
+.whiteColor {
+    color: #fff;
+}
+
+/*      applyValue      */
+#applyValue .contentWrap{
+    width: 80%;
+    margin: 0 auto;
+}
+#applyValue li{
+    float: left;
+    width: 33%;
+}
+#applyValue .img {
+    width: 310px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#applyValue img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: scale(1);
+}
+#applyValue img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#applyValue span {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+#applyValue p {
+    width: 90%;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+/*  移动端兼容   */
+@media screen and (max-width:1024px) {
+    #aboutContent {
+        width: 95%;
+    }
+    #applyValue .contentWrap {
+        width: 100%;
+    }
+    #contectContent {
+        width: 90%;
+    }
+}

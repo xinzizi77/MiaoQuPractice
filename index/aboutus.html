@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+
+</head>
+
+<body>
+    <div id="mainContentWrapper">
+        <header>
+            <div class="banner">
+                <div id="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <span>农业直播溯源</span>
+                </div>
+                <ul id="nav">
+                    <li>
+                        <div class="nav_item">
+                            <a href='index.html'>首页</a>
+                            <a href='index.html' class="hover">首页</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_item">
+                            <a href='aboutus.html' class="hover">公司介绍</a>
+                            <a href='aboutus.html' class="hover">公司介绍</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_item">
+                            <a href='item.html'>项目介绍</a>
+                            <a href='item.html' class="hover">项目介绍</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_item">
+                            <a href='applyValue.html'>应用价值</a>
+                            <a href='applyValue.html' class="hover">应用价值</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_item">
+                            <a href='contectUs.html'>联系我们</a>
+                            <a href='contectUs.html' class="hover">联系我们</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="header_box">
+            <ul id="imgLi" class="clear">
+                <li>
+                    <div id="title1">
+                        <p>一禾海容</p>
+                        <p>24小时监控直播服务</p>
+                    </div>
+                </li>
+                <li>
+                    <div id="title2">
+                        <p>让我们看看</p>
+                        <p>食品背后的故事</p>
+                    </div>
+                </li>
+            </ul>
+            <div id="pre"><img src="img/pre.png" /></div>
+            <div id="next"><img src="img/next.png" /></div>
+        </div>
+        <div id="aboutContent" class="clear">
+            <h2>公司介绍</h2>
+            <div class="contentWrap ">
+                <div class="left">
+                <img src="img/us.jpg" alt=""></div>
+                <div id="intro">
+                    本公司成立于2018年，是一家以互联网+为主体的新型网络销售公司，主体经营模式有以下两个：<br/><br/>
+                    一、网上销售为主体：主体基于自我开发的直播网站，微信公众号、淘宝商城、拼多多等一系列网络平台作为销售依托，直接对接农户的供货渠道。以优质的货源，全新的销售方式打开农产品网络销售的大门。<br/><br/>
+二、实体加盟的线下运作模式：线下实体加盟店也是我们的 一种农产品销售模式，我们的实体加盟店不同于传统的加盟店，以网络上直播等平台推广直播广告投送等方式帮助加盟商进行全方位销售。同时公司对接农户的供货方式能够节省加盟商的运营成本。
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer"><span>版权所有：湖南海容农业发展有限公司</span></div>
+        </footer>
+    </div>
+    <script src="js/myFunction.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+    (function(){
+    var oAbout = document.getElementById('aboutContent');
+    var oLeft = oAbout.getElementsByClassName('left')[0];
+    var oIntro = document.getElementById('intro');
+
+    window.onscroll = function (){
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > 400) {
+            doMove(oLeft,'left',50,0);
+            doMove(oIntro,'right',50,0);
+        }
+    }
+})();
+    </script>
+</body>
+
+</html>

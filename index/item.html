@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+
+</head>
+
+<body>
+    <div id="mainContentWrapper">
+        <header>
+            <div class="banner">
+                <div id="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <span>农业直播溯源</span>
+                </div>
+                <ul id="nav">
+                    <li>
+                        <div class="nav_item">
+                            <a href='index.html'>首页</a>
+                            <a href='index.html' class="hover">首页</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_item">
+                            <a href='aboutus.html'>公司介绍</a>
+                            <a href='aboutus.html' class="hover">公司介绍</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_item">
+                            <a href='item.html' class="hover">项目介绍</a>
+                            <a href='item.html' class="hover">项目介绍</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_item">
+                            <a href='applyValue.html'>应用价值</a>
+                            <a href='applyValue.html' class="hover">应用价值</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_item">
+                            <a href='contectUs.html'>联系我们</a>
+                            <a href='contectUs.html' class="hover">联系我们</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="header_box">
+            <ul id="imgLi" class="clear">
+                <li>
+                    <div id="title1">
+                        <p>一禾海容</p>
+                        <p>24小时监控直播服务</p>
+                    </div>
+                </li>
+                <li>
+                    <div id="title2">
+                        <p>让我们看看</p>
+                        <p>食品背后的故事</p>
+                    </div>
+                </li>
+            </ul>
+            <div id="pre"><img src="img/pre.png" /></div>
+            <div id="next"><img src="img/next.png" /></div>
+        </div>
+        <div id="itemWrapper">
+            <h2>项目介绍</h2>
+            <div class="contentWrapper">
+                <ul id="itemList" class="clear">
+                    <li>
+                        <img src='img/icon6.png' />
+                        <div class="content">
+                            <span>扫码，看生态基地直播</span>
+                            <p>即插即用，使用无门槛，使用零付费</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src='img/icon7.png' />
+                        <div class="content">
+                            <span>无网无电也能装</span>
+                            <p>4G + 太阳能轻松搞定</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src='img/icon8.png' />
+                        <div class="content">
+                            <span>支持万人同时看直播</span>
+                            <p>让好产品成为爆款</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src='img/icon9.png' />
+                        <div class="content">
+                            <span>手机 / 电视都能看</span>
+                            <p>打开即可看直播</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <span>版权所有：湖南海容农业发展有限公司</span>
+            </div>
+        </footer>
+    </div>
+    <script src="js/myFunction.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        (function () {
+            var oItemList = document.getElementById('itemList');
+            var aLi = oItemList.getElementsByTagName('li');
+
+            window.onscroll = function () {
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                if (scrollTop >= 300) {
+                    aLi[0].className = 'scaleItem';
+                    aLi[0].style.transform = 'scale(1)';
+                    setTimeout(function () {
+                        aLi[1].className = 'scaleItem';
+                        aLi[1].style.transform = 'scale(1)';
+                        setTimeout(function () {
+                            aLi[2].className = 'scaleItem';
+                            aLi[2].style.transform = 'scale(1)';
+                            setTimeout(function () {
+                                aLi[3].className = 'scaleItem';
+                                aLi[3].style.transform = 'scale(1)';
+                            }, 250);
+                        }, 250);
+                    }, 250);
+                }
+            }
+        })();
+    </script>
+</body>
+
+</html>
